@@ -1,3 +1,11 @@
+/*  Generalidades de  SQLSERVER */
+
+/* Crear tablas */
+create table usuarios (
+  nombre varchar(30),
+  clave varchar(10)
+ );
+/*Insercion de registros*/
 insert into usuarios (nombre, clave) values ('Mariano','payaso');
 insert into usuarios (clave, nombre) values ('River','Juan');
 /* conteo de registros */
