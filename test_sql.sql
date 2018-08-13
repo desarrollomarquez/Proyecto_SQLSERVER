@@ -340,6 +340,7 @@ create function f_ofertas
 
  /* Triggers */
 
+/* Create Tables */
  if object_id('libros') is not null
   drop table libros;
 
@@ -352,6 +353,7 @@ create function f_ofertas
   constraint pk_libros primary key (codigo)
  ); 
 
+/* Inserts Tables */
  insert into libros values('Uno','R. Bach','Planeta',50);
  insert into libros values('Ilusiones','R. Bach','Planeta',15);
  insert into libros values('El aleph','Borges','Emece',10);
@@ -360,6 +362,7 @@ create function f_ofertas
  if object_id('dis_libros_actualizar') is not null
   drop trigger dis_libros_actualizar;
  
+/* Create Triggers */
  create trigger dis_libros_actualizar
  on libros
  after update
