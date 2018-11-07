@@ -26,6 +26,10 @@ SELECT
 FROM name;
 /* COALESCE */
 
+
+
+
+
 SET NOCOUNT ON;  
 GO  
 USE tempdb;  
